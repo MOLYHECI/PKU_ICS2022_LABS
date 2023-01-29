@@ -1,0 +1,68 @@
+                            | # 2100017702 Zimo Meng
+                            | # Execution begins at address 0 
+0x000:                      | 	.pos 0
+0x000: 30f40002000000000000 | 	irmovq stack, %rsp  	# Set up stack pointer
+0x00a: 804800000000000000   | 	call main		# Execute main program
+0x013: 00                   | 	halt			# Terminate program 
+                            | 
+                            | # Sample
+0x018:                      | .align 8
+0x018:                      | Array:
+0x018: ca0b000000000000     |         .quad 0xbca
+0x020: ba0c000000000000     |         .quad 0xcba
+0x028: cb0a000000000000     |         .quad 0xacb
+0x030: ab0c000000000000     |         .quad 0xcab
+0x038: bc0a000000000000     |         .quad 0xabc
+0x040: ac0b000000000000     |         .quad 0xbac
+                            | 
+                            | #end
+0x048:                      | main:
+0x048: 30f71800000000000000 | 	irmovq Array,%rdi
+0x052: 30f60600000000000000 |     irmovq $6,%rsi
+0x05c: 806600000000000000   | 	call bubble		# sum(array, 4)
+0x065: 90                   | 	ret
+                            | 
+                            | #long bubble(long * data, long count)
+0x066:                      | bubble:
+0x066: 2073                 |     rrmovq %rdi,%rbx # %rbx = data
+0x068: 2062                 |     rrmovq %rsi,%rdx # %rdx = count
+0x06a: 30f00100000000000000 |     irmovq $1,%rax # %rax = 1
+0x074: 6102                 |     subq %rax,%rdx # %rdx = count - 1
+0x076: 6022                 |     addq %rdx,%rdx 
+0x078: 6022                 |     addq %rdx,%rdx
+0x07a: 6022                 |     addq %rdx,%rdx # %rdx = 8*(count -1)
+0x07c: 6023                 |     addq %rdx,%rbx # %rbx = last = data + 8 * (count - 1)
+0x07e:                      | test1:
+0x07e: 2030                 |     rrmovq %rbx,%rax
+0x080: 6170                 |     subq %rdi,%rax
+0x082: 710701000000000000   |     jle finish # last <= data
+0x08b:                      | loop1_1:
+0x08b: 2071                 |     rrmovq %rdi,%rcx # %rcx = i = data
+0x08d:                      | test2:
+0x08d: 2030                 |     rrmovq %rbx,%rax
+0x08f: 6110                 |     subq %rcx,%rax
+0x091: 71f200000000000000   |     jle loop1_2 # last <= i
+0x09a:                      | loop2:
+0x09a: 2018                 |     rrmovq %rcx,%r8 
+0x09c: 30f90800000000000000 |     irmovq $8,%r9
+0x0a6: 6098                 |     addq %r9,%r8 # %r8 = i + 1
+0x0a8: 50a80000000000000000 |     mrmovq (%r8),%r10 # %r10 = t = * (i + 1)
+0x0b2: 50b10000000000000000 |     mrmovq (%rcx),%r11 # %r11 = *i
+0x0bc: 20a0                 |     rrmovq %r10,%rax
+0x0be: 61b0                 |     subq %r11,%rax
+0x0c0: 75dd00000000000000   |     jge add_1
+0x0c9: 40b80000000000000000 |     rmmovq %r11,(%r8) # *(i + 1) = *i
+0x0d3: 40a10000000000000000 |     rmmovq %r10,(%rcx) # *i = t
+0x0dd:                      | add_1:
+0x0dd: 30f00800000000000000 |     irmovq $8,%rax
+0x0e7: 6001                 |     addq %rax,%rcx #i++
+0x0e9: 708d00000000000000   |     jmp test2
+0x0f2:                      | loop1_2:
+0x0f2: 30f00800000000000000 |     irmovq $8,%rax
+0x0fc: 6103                 |     subq %rax,%rbx
+0x0fe: 707e00000000000000   |     jmp test1
+0x107:                      | finish:
+0x107: 90                   |     ret
+                            | # Stack starts here and grows to lower addresses
+0x200:                      | 	.pos 0x200
+0x200:                      | stack:

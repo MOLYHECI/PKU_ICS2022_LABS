@@ -1,0 +1,180 @@
+#/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len words to dst.
+# Return the number of positive words (>0) contained in src.
+#
+# Include your name and ID here.
+# Zimo Meng 2100017702
+#
+# Describe how and why you modified the baseline code.
+# 采用10路循环展开+三叉树方法，在循环展开中通过提前读取方法消除数据依赖
+# 而对于余数的处理采用三叉树搜索的方法进行跳转，通过将加一指令后移的方法减少气泡带来的影响
+##################################################################
+# Do not modify this portion
+# Function prologue.
+# %rdi = src, %rsi = dst, %rdx = len
+ncopy:
+
+##################################################################
+# You can modify this portion
+	# Loop header
+test10:
+	iaddq $-9,%rdx
+	jl Root
+# Loop10:
+# 	mrmovq 72(%rdi),%r8
+# 	mrmovq 64(%rdi),%r9
+# 	rmmovq %r8,72(%rsi)
+# 	andq %r8,%r8
+# 	jle Loop9
+# 	iaddq $1,%rax
+Loop9:
+	mrmovq 64(%rdi),%r9
+	mrmovq 56(%rdi),%r8
+	rmmovq %r9,64(%rsi)
+	andq %r9,%r9
+Loop8:
+	mrmovq 48(%rdi),%r9
+	jle Loop8_2
+	iaddq $1,%rax
+Loop8_2:
+	rmmovq %r8,56(%rsi)
+	andq %r8,%r8
+Loop7:
+	mrmovq 40(%rdi),%r8
+	jle Loop7_2
+	iaddq $1,%rax
+Loop7_2:
+	rmmovq %r9,48(%rsi)
+	andq %r9,%r9
+Loop6:
+	mrmovq 32(%rdi),%r9
+	jle Loop6_2
+	iaddq $1,%rax
+Loop6_2:
+	rmmovq %r8,40(%rsi)
+	andq %r8,%r8
+Loop5:
+	mrmovq 24(%rdi),%r8
+	jle Loop5_2
+	iaddq $1,%rax
+Loop5_2:
+	rmmovq %r9,32(%rsi)
+	andq %r9,%r9
+Loop4:
+	mrmovq 16(%rdi),%r9
+	jle Loop4_2
+	iaddq $1,%rax
+Loop4_2:
+	rmmovq %r8,24(%rsi)
+	andq %r8,%r8
+Loop3:
+	mrmovq 8(%rdi),%r8
+	jle Loop3_2
+	iaddq $1,%rax
+Loop3_2:
+	rmmovq %r9,16(%rsi)
+	andq %r9,%r9
+Loop2:
+	mrmovq (%rdi),%r9
+	jle Loop2_2
+	iaddq $1,%rax
+Loop2_2:
+	rmmovq %r8,8(%rsi)
+	andq %r8,%r8
+Loop1:
+	jle Loop1_2
+	iaddq $1,%rax
+Loop1_2:
+	rmmovq %r9,(%rsi)
+	andq %r9,%r9
+	jle Npos
+	iaddq $1,%rax
+Npos:
+	iaddq $72,%rdi
+	iaddq $72,%rsi
+	iaddq $-9,%rdx
+	jge Loop9
+Root:
+	iaddq $8,%rdx
+	je Rest1
+	jl Done
+	iaddq $-2,%rdx
+	je Rest3
+	jl Rest2
+	iaddq $-2,%rdx
+	je Rest5
+	jl Rest4
+	iaddq $-2,%rdx
+	jl Rest6
+	je Rest7
+Rest8:
+	mrmovq 56(%rdi),%r8
+	rmmovq %r8,56(%rsi)
+	andq %r8,%r8
+Rest7:	
+	mrmovq 48(%rdi),%r9
+	jle Rest7_2
+	iaddq $1,%rax
+Rest7_2:
+	rmmovq %r9,48(%rsi)
+	andq %r9,%r9
+Rest6:
+	mrmovq 40(%rdi),%r8
+	jle Rest6_2
+	iaddq $1,%rax
+Rest6_2:
+	andq %r8,%r8
+	rmmovq %r8,40(%rsi)
+Rest5:
+	mrmovq 32(%rdi),%r9
+	jle Rest5_2
+	iaddq $1,%rax
+Rest5_2:
+	andq %r9,%r9
+	rmmovq %r9,32(%rsi)
+Rest4:
+	mrmovq 24(%rdi),%r8
+	jle Rest4_2
+	iaddq $1,%rax
+Rest4_2:
+	andq %r8,%r8
+	rmmovq %r8,24(%rsi)
+Rest3:
+	mrmovq 16(%rdi),%r9
+	jle Rest3_2
+	iaddq $1,%rax
+Rest3_2:
+	rmmovq %r9,16(%rsi)
+	andq %r9,%r9
+Rest2:
+	mrmovq 8(%rdi),%r8
+	jle Rest2_2
+	iaddq $1,%rax
+Rest2_2:
+	rmmovq %r8,8(%rsi)
+	andq %r8,%r8
+Rest1:
+	mrmovq (%rdi),%r9
+	jle Rest1_2
+	iaddq $1,%rax
+Rest1_2:
+	rmmovq %r9,(%rsi)
+	andq %r9,%r9
+	jle Done
+	iaddq $1,%rax
+##################################################################
+ # Do not modify the following section of code
+# src++
+# dst++
+#len>0?
+# if so, goto Loop
+##################################################################
+# Do not modify the following section of code
+# Function epilogue.
+Done:
+	ret
+##################################################################
+# Keep the following label at the end of your function
+End:
+#/* $end ncopy-ys */

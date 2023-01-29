@@ -1,0 +1,5 @@
+I hear the voice of fate, speaking my name in humble supplication.
+0 1 1 3 5 11
+1 986
+3 10
+6600

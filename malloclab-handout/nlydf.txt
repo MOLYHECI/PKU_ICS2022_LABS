@@ -1,0 +1,4212 @@
+Measuring performance with a cycle counter.
+Processor clock rate ~= 2000.0 MHz
+
+Testing mm malloc
+Reading tracefile: traces/nlydf.rep
+Checking mm_malloc for correctness, enter mm_init
+enter coalesce with bp = 800000048
+800000048 + 1000 = 800001048
+prev_alloc = 1, next_alloc = 1, size = 1000
+enter update_next
+enter add_list with bp = 800000048
+leave get_index with asize = 1000, index = 13
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000048
+800001048,0
+leave mm_init with heap_start = 800000000, heap_listp = 800000040
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000048,index = 13
+enter place with bp = 800000048, asize = 208
+csize = 1000
+enter delete_list with bp = 800000048
+leave get_index with asize = 1000, index = 13
+800000034,800000034,800000000
+enter add_list with bp = 800000250
+leave get_index with asize = df8, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000048, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000250,index = 12
+enter place with bp = 800000250, asize = 18
+csize = df8
+enter delete_list with bp = 800000250
+leave get_index with asize = df8, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800000268
+leave get_index with asize = de0, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000250, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000268,index = 12
+enter place with bp = 800000268, asize = 418
+csize = de0
+enter delete_list with bp = 800000268
+leave get_index with asize = de0, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800000680
+leave get_index with asize = 9c8, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000268, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000680,index = 12
+enter place with bp = 800000680, asize = 208
+csize = 9c8
+enter delete_list with bp = 800000680
+leave get_index with asize = 9c8, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800000888
+leave get_index with asize = 7c0, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000680, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000888,index = 11
+enter place with bp = 800000888, asize = 18
+csize = 7c0
+enter delete_list with bp = 800000888
+leave get_index with asize = 7c0, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 8000008a0
+leave get_index with asize = 7a8, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000888, payload size = 18
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000008a0,index = 11
+enter place with bp = 8000008a0, asize = 18
+csize = 7a8
+enter delete_list with bp = 8000008a0
+leave get_index with asize = 7a8, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 8000008b8
+leave get_index with asize = 790, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000008a0, payload size = 18
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000008b8,index = 11
+enter place with bp = 8000008b8, asize = 18
+csize = 790
+enter delete_list with bp = 8000008b8
+leave get_index with asize = 790, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 8000008d0
+leave get_index with asize = 778, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000008b8, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000008d0,index = 11
+enter place with bp = 8000008d0, asize = 208
+csize = 778
+enter delete_list with bp = 8000008d0
+leave get_index with asize = 778, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800000ad8
+leave get_index with asize = 570, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000008d0, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000ad8,index = 11
+enter place with bp = 800000ad8, asize = 208
+csize = 570
+enter delete_list with bp = 800000ad8
+leave get_index with asize = 570, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800000ce0
+leave get_index with asize = 368, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000ad8, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000ce0,index = 10
+enter place with bp = 800000ce0, asize = 18
+csize = 368
+enter delete_list with bp = 800000ce0
+leave get_index with asize = 368, index = 10
+800000028,800000028,800000000
+enter add_list with bp = 800000cf8
+leave get_index with asize = 350, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000ce0, payload size = 18
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000cf8,index = 10
+enter place with bp = 800000cf8, asize = 18
+csize = 350
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 350, index = 10
+800000028,800000028,800000000
+enter add_list with bp = 800000d10
+leave get_index with asize = 338, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000cf8, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000d10,index = 10
+enter place with bp = 800000d10, asize = 208
+csize = 338
+enter delete_list with bp = 800000d10
+leave get_index with asize = 338, index = 10
+800000028,800000028,800000000
+enter add_list with bp = 800000f18
+leave get_index with asize = 130, index = 9
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000d10, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = NULL
+enter coalesce with bp = 800001048
+800001048 + 1000 = 800002048
+prev_alloc = 0, next_alloc = 1, size = 1000
+1130
+at case 3
+800000f18
+enter delete_list with bp = 800000f18
+leave get_index with asize = 130, index = 9
+800000024,800000024,800000000
+enter update_next
+enter add_list with bp = 800000f18
+leave get_index with asize = 1130, index = 13
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000f18
+800002048,0
+enter place with bp = 800000f18, asize = 208
+csize = 1130
+enter delete_list with bp = 800000f18
+leave get_index with asize = 1130, index = 13
+800000034,800000034,800000000
+enter add_list with bp = 800001120
+leave get_index with asize = f28, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000f18, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001120,index = 12
+enter place with bp = 800001120, asize = 208
+csize = f28
+enter delete_list with bp = 800001120
+leave get_index with asize = f28, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800001328
+leave get_index with asize = d20, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001120, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001328,index = 12
+enter place with bp = 800001328, asize = 208
+csize = d20
+enter delete_list with bp = 800001328
+leave get_index with asize = d20, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800001530
+leave get_index with asize = b18, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001328, payload size = 208
+----------------------
+enter free with ptr = 800001120
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001120
+800001120 + 208 = 800001328
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001120
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001120
+800001328,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001120,index = 10
+enter place with bp = 800001120, asize = 208
+csize = 208
+enter delete_list with bp = 800001120
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 800001120, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001530,index = 12
+enter place with bp = 800001530, asize = 208
+csize = b18
+enter delete_list with bp = 800001530
+leave get_index with asize = b18, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800001738
+leave get_index with asize = 910, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001530, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001738,index = 12
+enter place with bp = 800001738, asize = 18
+csize = 910
+enter delete_list with bp = 800001738
+leave get_index with asize = 910, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800001750
+leave get_index with asize = 8f8, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001738, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001750,index = 12
+enter place with bp = 800001750, asize = 208
+csize = 8f8
+enter delete_list with bp = 800001750
+leave get_index with asize = 8f8, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800001958
+leave get_index with asize = 6f0, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001750, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001958,index = 11
+enter place with bp = 800001958, asize = 18
+csize = 6f0
+enter delete_list with bp = 800001958
+leave get_index with asize = 6f0, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800001970
+leave get_index with asize = 6d8, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001958, payload size = 18
+----------------------
+enter free with ptr = 800001750
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001750
+800001750 + 208 = 800001958
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001750
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001750
+800001958,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001970,index = 11
+enter place with bp = 800001970, asize = 418
+csize = 6d8
+enter delete_list with bp = 800001970
+leave get_index with asize = 6d8, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800001d88
+leave get_index with asize = 2c0, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001970, payload size = 418
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001d88,index = 10
+enter place with bp = 800001d88, asize = 18
+csize = 2c0
+enter delete_list with bp = 800001d88
+leave get_index with asize = 2c0, index = 10
+800000028,800000028,800001750
+enter add_list with bp = 800001da0
+leave get_index with asize = 2a8, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001d88, payload size = 18
+----------------------
+enter free with ptr = 800000ad8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000ad8
+800000ad8 + 208 = 800000ce0
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000ad8
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000ad8
+800000ce0,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = NULL
+enter coalesce with bp = 800002048
+800002048 + 1000 = 800003048
+prev_alloc = 0, next_alloc = 1, size = 1000
+12a8
+at case 3
+800001da0
+enter delete_list with bp = 800001da0
+leave get_index with asize = 2a8, index = 10
+800000028,800000ad8,800001750
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 12a8, index = 13
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001da0
+800003048,0
+enter place with bp = 800001da0, asize = 418
+csize = 12a8
+enter delete_list with bp = 800001da0
+leave get_index with asize = 12a8, index = 13
+800000034,800000034,800000000
+enter add_list with bp = 8000021b8
+leave get_index with asize = e90, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 418
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000ad8,index = 10
+enter place with bp = 800000ad8, asize = 18
+csize = 208
+enter delete_list with bp = 800000ad8
+leave get_index with asize = 208, index = 10
+800000028,800000028,800001750
+enter add_list with bp = 800000af0
+leave get_index with asize = 1f0, index = 9
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000ad8, payload size = 18
+----------------------
+enter free with ptr = 800001328
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001328
+800001328 + 208 = 800001530
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001328
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001328
+800001530,208
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000021b8,index = 12
+enter place with bp = 8000021b8, asize = 418
+csize = e90
+enter delete_list with bp = 8000021b8
+leave get_index with asize = e90, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 8000025d0
+leave get_index with asize = a78, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000021b8, payload size = 418
+----------------------
+enter free with ptr = 800001530
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001530
+800001530 + 208 = 800001738
+prev_alloc = 0, next_alloc = 1, size = 208
+410
+at case 3
+800001328
+enter delete_list with bp = 800001328
+leave get_index with asize = 208, index = 10
+800000028,800000028,800001750
+enter update_next
+enter add_list with bp = 800001328
+leave get_index with asize = 410, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001328
+800001738,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000025d0,index = 12
+enter place with bp = 8000025d0, asize = 418
+csize = a78
+enter delete_list with bp = 8000025d0
+leave get_index with asize = a78, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 8000029e8
+leave get_index with asize = 660, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000025d0, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001750,index = 10
+enter place with bp = 800001750, asize = 208
+csize = 208
+enter delete_list with bp = 800001750
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 800001750, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000029e8,index = 11
+enter place with bp = 8000029e8, asize = 208
+csize = 660
+enter delete_list with bp = 8000029e8
+leave get_index with asize = 660, index = 11
+80000002c,80000002c,800001328
+enter add_list with bp = 800002bf0
+leave get_index with asize = 458, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000029e8, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000af0,index = 9
+enter place with bp = 800000af0, asize = 18
+csize = 1f0
+enter delete_list with bp = 800000af0
+leave get_index with asize = 1f0, index = 9
+800000024,800000024,800000000
+enter add_list with bp = 800000b08
+leave get_index with asize = 1d8, index = 9
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000af0, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800002bf0,index = 11
+enter place with bp = 800002bf0, asize = 208
+csize = 458
+enter delete_list with bp = 800002bf0
+leave get_index with asize = 458, index = 11
+80000002c,80000002c,800001328
+enter add_list with bp = 800002df8
+leave get_index with asize = 250, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800002bf0, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800002df8,index = 10
+enter place with bp = 800002df8, asize = 208
+csize = 250
+enter delete_list with bp = 800002df8
+leave get_index with asize = 250, index = 10
+800000028,800000028,800000000
+enter add_list with bp = 800003000
+leave get_index with asize = 48, index = 7
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800002df8, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003000,index = 7
+enter place with bp = 800003000, asize = 18
+csize = 48
+enter delete_list with bp = 800003000
+leave get_index with asize = 48, index = 7
+80000001c,80000001c,800000000
+enter add_list with bp = 800003018
+leave get_index with asize = 30, index = 6
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003000, payload size = 18
+----------------------
+enter free with ptr = 8000029e8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000029e8
+8000029e8 + 208 = 800002bf0
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 8000029e8
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 8000029e8
+800002bf0,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000029e8,index = 10
+enter place with bp = 8000029e8, asize = 208
+csize = 208
+enter delete_list with bp = 8000029e8
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 8000029e8, payload size = 208
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = NULL
+enter coalesce with bp = 800003048
+800003048 + 1000 = 800004048
+prev_alloc = 0, next_alloc = 1, size = 1000
+1030
+at case 3
+800003018
+enter delete_list with bp = 800003018
+leave get_index with asize = 30, index = 6
+800000018,800000018,800000000
+enter update_next
+enter add_list with bp = 800003018
+leave get_index with asize = 1030, index = 13
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800003018
+800004048,0
+enter place with bp = 800003018, asize = 418
+csize = 1030
+enter delete_list with bp = 800003018
+leave get_index with asize = 1030, index = 13
+800000034,800000034,800000000
+enter add_list with bp = 800003430
+leave get_index with asize = c18, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003018, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003430,index = 12
+enter place with bp = 800003430, asize = 418
+csize = c18
+enter delete_list with bp = 800003430
+leave get_index with asize = c18, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800003848
+leave get_index with asize = 800, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003430, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001328,index = 11
+enter place with bp = 800001328, asize = 208
+csize = 410
+enter delete_list with bp = 800001328
+leave get_index with asize = 410, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800001530
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001328, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000b08,index = 9
+enter place with bp = 800000b08, asize = 18
+csize = 1d8
+enter delete_list with bp = 800000b08
+leave get_index with asize = 1d8, index = 9
+800000024,800000024,800000000
+enter add_list with bp = 800000b20
+leave get_index with asize = 1c0, index = 9
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000b08, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001530,index = 10
+enter place with bp = 800001530, asize = 208
+csize = 208
+enter delete_list with bp = 800001530
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 800001530, payload size = 208
+----------------------
+enter free with ptr = 800001da0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001da0
+800001da0 + 418 = 8000021b8
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001da0
+8000021b8,418
+leave free
+----------
+enter free with ptr = 800000ad8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000ad8
+800000ad8 + 18 = 800000af0
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000ad8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000ad8
+800000af0,18
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001da0,index = 11
+enter place with bp = 800001da0, asize = 208
+csize = 418
+enter delete_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800001fa8
+leave get_index with asize = 210, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 208
+----------------------
+enter free with ptr = 800000d10
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000d10
+800000d10 + 208 = 800000f18
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000d10
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000d10
+800000f18,208
+leave free
+----------
+enter free with ptr = 800001738
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001738
+800001738 + 18 = 800001750
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001738
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001738
+800001750,208
+leave free
+----------
+enter free with ptr = 800000b08
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000b08
+800000b08 + 18 = 800000b20
+prev_alloc = 1, next_alloc = 0, size = 18
+at case 2
+enter delete_list with bp = 800000b20
+leave get_index with asize = 1c0, index = 9
+800000024,800000024,800000000
+enter update_next
+enter add_list with bp = 800000b08
+leave get_index with asize = 1d8, index = 9
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000b08
+800000ce0,18
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001738,index = 5
+enter place with bp = 800001738, asize = 18
+csize = 18
+enter delete_list with bp = 800001738
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000ad8
+enter update_next
+leave place
+leave malloc with bp = 800001738, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000d10,index = 10
+enter place with bp = 800000d10, asize = 208
+csize = 208
+enter delete_list with bp = 800000d10
+leave get_index with asize = 208, index = 10
+800000028,800000028,800001fa8
+enter update_next
+leave place
+leave malloc with bp = 800000d10, payload size = 208
+----------------------
+enter free with ptr = 8000021b8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000021b8
+8000021b8 + 418 = 8000025d0
+prev_alloc = 0, next_alloc = 1, size = 418
+628
+at case 3
+800001fa8
+enter delete_list with bp = 800001fa8
+leave get_index with asize = 210, index = 10
+800000028,800000028,800000000
+enter update_next
+enter add_list with bp = 800001fa8
+leave get_index with asize = 628, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001fa8
+8000025d0,418
+leave free
+----------
+enter free with ptr = 800000cf8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000cf8
+800000cf8 + 18 = 800000d10
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000cf8
+800000d10,208
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001fa8,index = 11
+enter place with bp = 800001fa8, asize = 418
+csize = 628
+enter delete_list with bp = 800001fa8
+leave get_index with asize = 628, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 8000023c0
+leave get_index with asize = 210, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001fa8, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003848,index = 12
+enter place with bp = 800003848, asize = 418
+csize = 800
+enter delete_list with bp = 800003848
+leave get_index with asize = 800, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800003c60
+leave get_index with asize = 3e8, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003848, payload size = 418
+----------------------
+enter free with ptr = 8000029e8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000029e8
+8000029e8 + 208 = 800002bf0
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 8000029e8
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 8000029e8
+800002bf0,208
+leave free
+----------
+enter free with ptr = 800000680
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000680
+800000680 + 208 = 800000888
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000680
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000680
+800000888,18
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000680,index = 10
+enter place with bp = 800000680, asize = 208
+csize = 208
+enter delete_list with bp = 800000680
+leave get_index with asize = 208, index = 10
+800000028,800000028,8000029e8
+enter update_next
+leave place
+leave malloc with bp = 800000680, payload size = 208
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = NULL
+enter coalesce with bp = 800004048
+800004048 + 1000 = 800005048
+prev_alloc = 0, next_alloc = 1, size = 1000
+13e8
+at case 3
+800003c60
+enter delete_list with bp = 800003c60
+leave get_index with asize = 3e8, index = 10
+800000028,8000029e8,8000023c0
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800003c60
+leave get_index with asize = 13e8, index = 13
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800003c60
+800005048,0
+enter place with bp = 800003c60, asize = 418
+csize = 13e8
+enter delete_list with bp = 800003c60
+leave get_index with asize = 13e8, index = 13
+800000034,800000034,800000000
+enter add_list with bp = 800004078
+leave get_index with asize = fd0, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003c60, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800004078,index = 12
+enter place with bp = 800004078, asize = 418
+csize = fd0
+enter delete_list with bp = 800004078
+leave get_index with asize = fd0, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800004490
+leave get_index with asize = bb8, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800004078, payload size = 418
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000cf8,index = 5
+enter place with bp = 800000cf8, asize = 18
+csize = 18
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000ad8
+enter update_next
+leave place
+leave malloc with bp = 800000cf8, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800004490,index = 12
+enter place with bp = 800004490, asize = 418
+csize = bb8
+enter delete_list with bp = 800004490
+leave get_index with asize = bb8, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 8000048a8
+leave get_index with asize = 7a0, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800004490, payload size = 418
+----------------------
+enter free with ptr = 800001970
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001970
+800001970 + 418 = 800001d88
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800001970
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001970
+800001d88,18
+leave free
+----------
+enter free with ptr = 800003000
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003000
+800003000 + 18 = 800003018
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800003000
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800003000
+800003018,418
+leave free
+----------
+enter free with ptr = 8000008b8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000008b8
+8000008b8 + 18 = 8000008d0
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 8000008b8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 8000008b8
+8000008d0,208
+leave free
+----------
+enter free with ptr = 800001328
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001328
+800001328 + 208 = 800001530
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001328
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001328
+800001530,208
+leave free
+----------
+enter free with ptr = 800000f18
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000f18
+800000f18 + 208 = 800001120
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000f18
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000f18
+800001120,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000f18,index = 10
+enter place with bp = 800000f18, asize = 208
+csize = 208
+enter delete_list with bp = 800000f18
+leave get_index with asize = 208, index = 10
+800000028,800000028,800001328
+enter update_next
+leave place
+leave malloc with bp = 800000f18, payload size = 208
+----------------------
+enter free with ptr = 800002df8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800002df8
+800002df8 + 208 = 800003000
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800003000
+leave get_index with asize = 18, index = 5
+800000014,8000008b8,800000ad8
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800002df8
+leave get_index with asize = 220, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800002df8
+800003018,418
+leave free
+----------
+enter free with ptr = 800001750
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001750
+800001750 + 208 = 800001958
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001750
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001750
+800001958,18
+leave free
+----------
+enter free with ptr = 800000048
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000048
+800000048 + 208 = 800000250
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000048
+800000250,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001970,index = 11
+enter place with bp = 800001970, asize = 418
+csize = 418
+enter delete_list with bp = 800001970
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,8000048a8
+enter update_next
+leave place
+leave malloc with bp = 800001970, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000048a8,index = 11
+enter place with bp = 8000048a8, asize = 418
+csize = 7a0
+enter delete_list with bp = 8000048a8
+leave get_index with asize = 7a0, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800004cc0
+leave get_index with asize = 388, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000048a8, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = NULL
+enter coalesce with bp = 800005048
+800005048 + 1000 = 800006048
+prev_alloc = 0, next_alloc = 1, size = 1000
+1388
+at case 3
+800004cc0
+enter delete_list with bp = 800004cc0
+leave get_index with asize = 388, index = 10
+800000028,800000028,800000048
+enter update_next
+enter add_list with bp = 800004cc0
+leave get_index with asize = 1388, index = 13
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800004cc0
+800006048,0
+enter place with bp = 800004cc0, asize = 418
+csize = 1388
+enter delete_list with bp = 800004cc0
+leave get_index with asize = 1388, index = 13
+800000034,800000034,800000000
+enter add_list with bp = 8000050d8
+leave get_index with asize = f70, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800004cc0, payload size = 418
+----------------------
+enter free with ptr = 8000008a0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000008a0
+8000008a0 + 18 = 8000008b8
+prev_alloc = 1, next_alloc = 0, size = 18
+at case 2
+enter delete_list with bp = 8000008b8
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000ad8
+enter update_next
+enter add_list with bp = 8000008a0
+leave get_index with asize = 30, index = 6
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 8000008a0
+8000008d0,208
+leave free
+----------
+enter free with ptr = 800000888
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000888
+800000888 + 18 = 8000008a0
+prev_alloc = 1, next_alloc = 0, size = 18
+at case 2
+enter delete_list with bp = 8000008a0
+leave get_index with asize = 30, index = 6
+800000018,800000018,800000000
+enter update_next
+enter add_list with bp = 800000888
+leave get_index with asize = 48, index = 7
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000888
+8000008d0,208
+leave free
+----------
+enter free with ptr = 800000af0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000af0
+800000af0 + 18 = 800000b08
+prev_alloc = 0, next_alloc = 0, size = 18
+enter delete_list with bp = 800000ad8
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000000
+enter delete_list with bp = 800000b08
+leave get_index with asize = 1d8, index = 9
+800000024,800000024,800000000
+enter update_next
+enter add_list with bp = 800000ad8
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000ad8
+800000ce0,18
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000ad8,index = 10
+enter place with bp = 800000ad8, asize = 208
+csize = 208
+enter delete_list with bp = 800000ad8
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000048
+enter update_next
+leave place
+leave malloc with bp = 800000ad8, payload size = 208
+----------------------
+enter free with ptr = 800004490
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800004490
+800004490 + 418 = 8000048a8
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800004490
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800004490
+8000048a8,418
+leave free
+----------
+enter free with ptr = 800003430
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003430
+800003430 + 418 = 800003848
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800003430
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800003430
+800003848,418
+leave free
+----------
+enter free with ptr = 800003848
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003848
+800003848 + 418 = 800003c60
+prev_alloc = 0, next_alloc = 1, size = 418
+830
+at case 3
+800003430
+enter delete_list with bp = 800003430
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800004490
+enter update_next
+enter add_list with bp = 800003430
+leave get_index with asize = 830, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800003430
+800003c60,418
+leave free
+----------
+enter free with ptr = 800000f18
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000f18
+800000f18 + 208 = 800001120
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000f18
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000f18
+800001120,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000f18,index = 10
+enter place with bp = 800000f18, asize = 208
+csize = 208
+enter delete_list with bp = 800000f18
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000048
+enter update_next
+leave place
+leave malloc with bp = 800000f18, payload size = 208
+----------------------
+enter free with ptr = 800000ce0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000ce0
+800000ce0 + 18 = 800000cf8
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000ce0
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000ce0
+800000cf8,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800004490,index = 11
+enter place with bp = 800004490, asize = 418
+csize = 418
+enter delete_list with bp = 800004490
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800004490, payload size = 418
+----------------------
+enter free with ptr = 800000680
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000680
+800000680 + 208 = 800000888
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800000888
+leave get_index with asize = 48, index = 7
+80000001c,80000001c,800000000
+enter update_next
+enter add_list with bp = 800000680
+leave get_index with asize = 250, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000680
+8000008d0,208
+leave free
+----------
+enter free with ptr = 800000268
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000268
+800000268 + 418 = 800000680
+prev_alloc = 1, next_alloc = 0, size = 418
+at case 2
+enter delete_list with bp = 800000680
+leave get_index with asize = 250, index = 10
+800000028,800000028,800000048
+enter update_next
+enter add_list with bp = 800000268
+leave get_index with asize = 668, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000268
+8000008d0,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000048,index = 10
+enter place with bp = 800000048, asize = 208
+csize = 208
+enter delete_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+800000028,800000028,800001750
+enter update_next
+leave place
+leave malloc with bp = 800000048, payload size = 208
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000268,index = 11
+enter place with bp = 800000268, asize = 418
+csize = 668
+enter delete_list with bp = 800000268
+leave get_index with asize = 668, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800000680
+leave get_index with asize = 250, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000268, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000680,index = 10
+enter place with bp = 800000680, asize = 208
+csize = 250
+enter delete_list with bp = 800000680
+leave get_index with asize = 250, index = 10
+800000028,800000028,800001750
+enter add_list with bp = 800000888
+leave get_index with asize = 48, index = 7
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000680, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001750,index = 10
+enter place with bp = 800001750, asize = 208
+csize = 208
+enter delete_list with bp = 800001750
+leave get_index with asize = 208, index = 10
+800000028,800000028,800002df8
+enter update_next
+leave place
+leave malloc with bp = 800001750, payload size = 208
+----------------------
+enter free with ptr = 800001da0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001da0
+800001da0 + 208 = 800001fa8
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001da0
+800001fa8,418
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001da0,index = 10
+enter place with bp = 800001da0, asize = 208
+csize = 208
+enter delete_list with bp = 800001da0
+leave get_index with asize = 208, index = 10
+800000028,800000028,800002df8
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 208
+----------------------
+enter free with ptr = 800000d10
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000d10
+800000d10 + 208 = 800000f18
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000d10
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000d10
+800000f18,208
+leave free
+----------
+enter free with ptr = 800001d88
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001d88
+800001d88 + 18 = 800001da0
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001d88
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001d88
+800001da0,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000d10,index = 10
+enter place with bp = 800000d10, asize = 208
+csize = 208
+enter delete_list with bp = 800000d10
+leave get_index with asize = 208, index = 10
+800000028,800000028,800002df8
+enter update_next
+leave place
+leave malloc with bp = 800000d10, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800002df8,index = 10
+enter place with bp = 800002df8, asize = 208
+csize = 220
+enter delete_list with bp = 800002df8
+leave get_index with asize = 220, index = 10
+800000028,800000028,800001328
+enter add_list with bp = 800003000
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800002df8, payload size = 208
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001328,index = 10
+enter place with bp = 800001328, asize = 208
+csize = 208
+enter delete_list with bp = 800001328
+leave get_index with asize = 208, index = 10
+800000028,800000028,8000029e8
+enter update_next
+leave place
+leave malloc with bp = 800001328, payload size = 208
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003430,index = 12
+enter place with bp = 800003430, asize = 418
+csize = 830
+enter delete_list with bp = 800003430
+leave get_index with asize = 830, index = 12
+800000030,800000030,8000050d8
+enter add_list with bp = 800003848
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003430, payload size = 418
+----------------------
+enter free with ptr = 800000680
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000680
+800000680 + 208 = 800000888
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800000888
+leave get_index with asize = 48, index = 7
+80000001c,80000001c,800000000
+enter update_next
+enter add_list with bp = 800000680
+leave get_index with asize = 250, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000680
+8000008d0,208
+leave free
+----------
+enter free with ptr = 800001fa8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001fa8
+800001fa8 + 418 = 8000023c0
+prev_alloc = 1, next_alloc = 0, size = 418
+at case 2
+enter delete_list with bp = 8000023c0
+leave get_index with asize = 210, index = 10
+800000028,8000029e8,800000000
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800001fa8
+leave get_index with asize = 628, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001fa8
+8000025d0,418
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003000,index = 5
+enter place with bp = 800003000, asize = 18
+csize = 18
+enter delete_list with bp = 800003000
+leave get_index with asize = 18, index = 5
+800000014,800000014,800001d88
+enter update_next
+leave place
+leave malloc with bp = 800003000, payload size = 18
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001d88,index = 5
+enter place with bp = 800001d88, asize = 18
+csize = 18
+enter delete_list with bp = 800001d88
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000ce0
+enter update_next
+leave place
+leave malloc with bp = 800001d88, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000680,index = 10
+enter place with bp = 800000680, asize = 208
+csize = 250
+enter delete_list with bp = 800000680
+leave get_index with asize = 250, index = 10
+800000028,800000028,8000029e8
+enter add_list with bp = 800000888
+leave get_index with asize = 48, index = 7
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000680, payload size = 208
+----------------------
+enter free with ptr = 800001da0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001da0
+800001da0 + 208 = 800001fa8
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800001fa8
+leave get_index with asize = 628, index = 11
+80000002c,80000002c,800003848
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 830, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001da0
+8000025d0,418
+leave free
+----------
+enter free with ptr = 800000f18
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000f18
+800000f18 + 208 = 800001120
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000f18
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000f18
+800001120,208
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000ce0,index = 5
+enter place with bp = 800000ce0, asize = 18
+csize = 18
+enter delete_list with bp = 800000ce0
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000000
+enter update_next
+leave place
+leave malloc with bp = 800000ce0, payload size = 18
+----------------------
+enter free with ptr = 800001958
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001958
+800001958 + 18 = 800001970
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001958
+800001970,418
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001958,index = 5
+enter place with bp = 800001958, asize = 18
+csize = 18
+enter delete_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+800000014,800000014,800000000
+enter update_next
+leave place
+leave malloc with bp = 800001958, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003848,index = 11
+enter place with bp = 800003848, asize = 418
+csize = 418
+enter delete_list with bp = 800003848
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800003848, payload size = 418
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000888,index = 7
+enter place with bp = 800000888, asize = 18
+csize = 48
+enter delete_list with bp = 800000888
+leave get_index with asize = 48, index = 7
+80000001c,80000001c,800000000
+enter add_list with bp = 8000008a0
+leave get_index with asize = 30, index = 6
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800000888, payload size = 18
+----------------------
+enter free with ptr = 800003018
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003018
+800003018 + 418 = 800003430
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800003018
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800003018
+800003430,418
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003018,index = 11
+enter place with bp = 800003018, asize = 418
+csize = 418
+enter delete_list with bp = 800003018
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800003018, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001da0,index = 12
+enter place with bp = 800001da0, asize = 418
+csize = 830
+enter delete_list with bp = 800001da0
+leave get_index with asize = 830, index = 12
+800000030,800000030,8000050d8
+enter add_list with bp = 8000021b8
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000f18,index = 10
+enter place with bp = 800000f18, asize = 208
+csize = 208
+enter delete_list with bp = 800000f18
+leave get_index with asize = 208, index = 10
+800000028,800000028,8000029e8
+enter update_next
+leave place
+leave malloc with bp = 800000f18, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000008a0,index = 6
+enter place with bp = 8000008a0, asize = 18
+csize = 30
+enter delete_list with bp = 8000008a0
+leave get_index with asize = 30, index = 6
+800000018,800000018,800000000
+enter add_list with bp = 8000008b8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000008a0, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000021b8,index = 11
+enter place with bp = 8000021b8, asize = 418
+csize = 418
+enter delete_list with bp = 8000021b8
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 8000021b8, payload size = 418
+----------------------
+enter free with ptr = 800003018
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003018
+800003018 + 418 = 800003430
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800003018
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800003018
+800003430,418
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000029e8,index = 10
+enter place with bp = 8000029e8, asize = 208
+csize = 208
+enter delete_list with bp = 8000029e8
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 8000029e8, payload size = 208
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003018,index = 11
+enter place with bp = 800003018, asize = 418
+csize = 418
+enter delete_list with bp = 800003018
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800003018, payload size = 418
+----------------------
+enter free with ptr = 800002bf0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800002bf0
+800002bf0 + 208 = 800002df8
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800002bf0
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800002bf0
+800002df8,208
+leave free
+----------
+enter free with ptr = 800001da0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001da0
+800001da0 + 418 = 8000021b8
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001da0
+8000021b8,418
+leave free
+----------
+enter free with ptr = 8000025d0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000025d0
+8000025d0 + 418 = 8000029e8
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 8000025d0
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 8000025d0
+8000029e8,208
+leave free
+----------
+enter free with ptr = 800000048
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000048
+800000048 + 208 = 800000250
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000048
+800000250,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000025d0,index = 11
+enter place with bp = 8000025d0, asize = 418
+csize = 418
+enter delete_list with bp = 8000025d0
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800001da0
+enter update_next
+leave place
+leave malloc with bp = 8000025d0, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000048,index = 10
+enter place with bp = 800000048, asize = 208
+csize = 208
+enter delete_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+800000028,800000028,800002bf0
+enter update_next
+leave place
+leave malloc with bp = 800000048, payload size = 208
+----------------------
+enter free with ptr = 800003000
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003000
+800003000 + 18 = 800003018
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800003000
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800003000
+800003018,418
+leave free
+----------
+enter free with ptr = 800000250
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000250
+800000250 + 18 = 800000268
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000250
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000250
+800000268,418
+leave free
+----------
+enter free with ptr = 800000cf8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000cf8
+800000cf8 + 18 = 800000d10
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000cf8
+800000d10,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800002bf0,index = 10
+enter place with bp = 800002bf0, asize = 208
+csize = 208
+enter delete_list with bp = 800002bf0
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 800002bf0, payload size = 208
+----------------------
+enter free with ptr = 800001530
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001530
+800001530 + 208 = 800001738
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001530
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001530
+800001738,18
+leave free
+----------
+enter free with ptr = 800001328
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001328
+800001328 + 208 = 800001530
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800001530
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+enter add_list with bp = 800001328
+leave get_index with asize = 410, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001328
+800001738,18
+leave free
+----------
+enter free with ptr = 800001738
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001738
+800001738 + 18 = 800001750
+prev_alloc = 0, next_alloc = 1, size = 18
+428
+at case 3
+800001328
+enter delete_list with bp = 800001328
+leave get_index with asize = 410, index = 11
+80000002c,80000002c,800001da0
+enter update_next
+enter add_list with bp = 800001328
+leave get_index with asize = 428, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001328
+800001750,208
+leave free
+----------
+enter free with ptr = 800001958
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001958
+800001958 + 18 = 800001970
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001958
+800001970,418
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001328,index = 11
+enter place with bp = 800001328, asize = 418
+csize = 428
+enter delete_list with bp = 800001328
+leave get_index with asize = 428, index = 11
+80000002c,80000002c,800001da0
+enter add_list with bp = 800001740
+leave get_index with asize = 10, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001328, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001da0,index = 11
+enter place with bp = 800001da0, asize = 208
+csize = 418
+enter delete_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800001fa8
+leave get_index with asize = 210, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001958,index = 5
+enter place with bp = 800001958, asize = 18
+csize = 18
+enter delete_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+800000014,800001740,800000cf8
+Nothing Wrong in line 144
+enter update_next
+leave place
+leave malloc with bp = 800001958, payload size = 18
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000cf8,index = 5
+enter place with bp = 800000cf8, asize = 18
+csize = 18
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+800000014,800001740,800000250
+Nothing Wrong in line 144
+enter update_next
+leave place
+leave malloc with bp = 800000cf8, payload size = 18
+----------------------
+enter free with ptr = 800000cf8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000cf8
+800000cf8 + 18 = 800000d10
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000cf8
+800000d10,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001fa8,index = 10
+enter place with bp = 800001fa8, asize = 208
+csize = 210
+enter delete_list with bp = 800001fa8
+leave get_index with asize = 210, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 800001fa8, payload size = 210
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000cf8,index = 5
+enter place with bp = 800000cf8, asize = 18
+csize = 18
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+800000014,800000014,800001740
+enter update_next
+leave place
+leave malloc with bp = 800000cf8, payload size = 18
+----------------------
+enter free with ptr = 8000029e8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000029e8
+8000029e8 + 208 = 800002bf0
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 8000029e8
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 8000029e8
+800002bf0,208
+leave free
+----------
+enter free with ptr = 800003430
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003430
+800003430 + 418 = 800003848
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800003430
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800003430
+800003848,418
+leave free
+----------
+enter free with ptr = 800004078
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800004078
+800004078 + 418 = 800004490
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800004078
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800004078
+800004490,418
+leave free
+----------
+enter free with ptr = 800001da0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001da0
+800001da0 + 208 = 800001fa8
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001da0
+800001fa8,210
+leave free
+----------
+enter free with ptr = 800001fa8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001fa8
+800001fa8 + 210 = 8000021b8
+prev_alloc = 0, next_alloc = 1, size = 210
+418
+at case 3
+800001da0
+enter delete_list with bp = 800001da0
+leave get_index with asize = 208, index = 10
+800000028,800000028,8000029e8
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001da0
+8000021b8,418
+leave free
+----------
+enter free with ptr = 800001970
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001970
+800001970 + 418 = 800001d88
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800001970
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001970
+800001d88,18
+leave free
+----------
+enter free with ptr = 800003848
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003848
+800003848 + 418 = 800003c60
+prev_alloc = 0, next_alloc = 1, size = 418
+830
+at case 3
+800003430
+enter delete_list with bp = 800003430
+leave get_index with asize = 418, index = 11
+80000002c,800004078,800000000
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800003430
+leave get_index with asize = 830, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800003430
+800003c60,418
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000029e8,index = 10
+enter place with bp = 8000029e8, asize = 208
+csize = 208
+enter delete_list with bp = 8000029e8
+leave get_index with asize = 208, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 8000029e8, payload size = 208
+----------------------
+enter free with ptr = 800000cf8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000cf8
+800000cf8 + 18 = 800000d10
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000cf8
+800000d10,208
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000cf8,index = 5
+enter place with bp = 800000cf8, asize = 18
+csize = 18
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+800000014,800000014,800001740
+enter update_next
+leave place
+leave malloc with bp = 800000cf8, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001970,index = 11
+enter place with bp = 800001970, asize = 418
+csize = 418
+enter delete_list with bp = 800001970
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800001da0
+enter update_next
+leave place
+leave malloc with bp = 800001970, payload size = 418
+----------------------
+enter free with ptr = 800002df8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800002df8
+800002df8 + 208 = 800003000
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800003000
+leave get_index with asize = 18, index = 5
+800000014,800000250,8000008b8
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800002df8
+leave get_index with asize = 220, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800002df8
+800003018,418
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001da0,index = 11
+enter place with bp = 800001da0, asize = 418
+csize = 418
+enter delete_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800004078
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800004078,index = 11
+enter place with bp = 800004078, asize = 418
+csize = 418
+enter delete_list with bp = 800004078
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800004078, payload size = 418
+----------------------
+enter free with ptr = 800002bf0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800002bf0
+800002bf0 + 208 = 800002df8
+prev_alloc = 1, next_alloc = 0, size = 208
+at case 2
+enter delete_list with bp = 800002df8
+leave get_index with asize = 220, index = 10
+800000028,800000028,800000000
+enter update_next
+enter add_list with bp = 800002bf0
+leave get_index with asize = 428, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800002bf0
+800003018,418
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800002bf0,index = 11
+enter place with bp = 800002bf0, asize = 418
+csize = 428
+enter delete_list with bp = 800002bf0
+leave get_index with asize = 428, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800003008
+leave get_index with asize = 10, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800002bf0, payload size = 418
+----------------------
+enter free with ptr = 800004490
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800004490
+800004490 + 418 = 8000048a8
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800004490
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800004490
+8000048a8,418
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800004490,index = 11
+enter place with bp = 800004490, asize = 208
+csize = 418
+enter delete_list with bp = 800004490
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter add_list with bp = 800004698
+leave get_index with asize = 210, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800004490, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000250,index = 5
+enter place with bp = 800000250, asize = 18
+csize = 18
+enter delete_list with bp = 800000250
+leave get_index with asize = 18, index = 5
+800000014,800001740,8000008b8
+Nothing Wrong in line 144
+enter update_next
+leave place
+leave malloc with bp = 800000250, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003430,index = 12
+enter place with bp = 800003430, asize = 418
+csize = 830
+enter delete_list with bp = 800003430
+leave get_index with asize = 830, index = 12
+800000030,800000030,8000050d8
+enter add_list with bp = 800003848
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800003430, payload size = 418
+----------------------
+enter free with ptr = 8000008a0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000008a0
+8000008a0 + 18 = 8000008b8
+prev_alloc = 1, next_alloc = 0, size = 18
+at case 2
+enter delete_list with bp = 8000008b8
+leave get_index with asize = 18, index = 5
+800000014,800001740,800000000
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 8000008a0
+leave get_index with asize = 30, index = 6
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 8000008a0
+8000008d0,208
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003848,index = 11
+enter place with bp = 800003848, asize = 418
+csize = 418
+enter delete_list with bp = 800003848
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800003848, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000050d8,index = 12
+enter place with bp = 8000050d8, asize = 418
+csize = f70
+enter delete_list with bp = 8000050d8
+leave get_index with asize = f70, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 8000054f0
+leave get_index with asize = b58, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000050d8, payload size = 418
+----------------------
+enter free with ptr = 800003c60
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003c60
+800003c60 + 418 = 800004078
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800003c60
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800003c60
+800004078,418
+leave free
+----------
+enter free with ptr = 800001958
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001958
+800001958 + 18 = 800001970
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001958
+800001970,418
+leave free
+----------
+enter free with ptr = 800001da0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001da0
+800001da0 + 418 = 8000021b8
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001da0
+8000021b8,418
+leave free
+----------
+enter free with ptr = 8000021b8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000021b8
+8000021b8 + 418 = 8000025d0
+prev_alloc = 0, next_alloc = 1, size = 418
+830
+at case 3
+800001da0
+enter delete_list with bp = 800001da0
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800003c60
+enter update_next
+enter add_list with bp = 800001da0
+leave get_index with asize = 830, index = 12
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001da0
+8000025d0,418
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001958,index = 5
+enter place with bp = 800001958, asize = 18
+csize = 18
+enter delete_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+800000014,800000014,800003008
+enter update_next
+leave place
+leave malloc with bp = 800001958, payload size = 18
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003c60,index = 11
+enter place with bp = 800003c60, asize = 418
+csize = 418
+enter delete_list with bp = 800003c60
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800003c60, payload size = 418
+----------------------
+enter free with ptr = 800000048
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000048
+800000048 + 208 = 800000250
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000048
+800000250,18
+leave free
+----------
+enter free with ptr = 800001970
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001970
+800001970 + 418 = 800001d88
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800001970
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800001970
+800001d88,18
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000008a0,index = 6
+enter place with bp = 8000008a0, asize = 18
+csize = 30
+enter delete_list with bp = 8000008a0
+leave get_index with asize = 30, index = 6
+800000018,800000018,800000000
+enter add_list with bp = 8000008b8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000008a0, payload size = 18
+----------------------
+enter free with ptr = 800003430
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800003430
+800003430 + 418 = 800003848
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800003430
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800003430
+800003848,418
+leave free
+----------
+enter free with ptr = 800000cf8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000cf8
+800000cf8 + 18 = 800000d10
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000cf8
+800000d10,208
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000048,index = 10
+enter place with bp = 800000048, asize = 208
+csize = 208
+enter delete_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+800000028,800000028,800004698
+enter update_next
+leave place
+leave malloc with bp = 800000048, payload size = 208
+----------------------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000cf8,index = 5
+enter place with bp = 800000cf8, asize = 18
+csize = 18
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+800000014,800000014,8000008b8
+enter update_next
+leave place
+leave malloc with bp = 800000cf8, payload size = 18
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800004698,index = 10
+enter place with bp = 800004698, asize = 208
+csize = 210
+enter delete_list with bp = 800004698
+leave get_index with asize = 210, index = 10
+800000028,800000028,800000000
+enter update_next
+leave place
+leave malloc with bp = 800004698, payload size = 210
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800003430,index = 11
+enter place with bp = 800003430, asize = 418
+csize = 418
+enter delete_list with bp = 800003430
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800001970
+enter update_next
+leave place
+leave malloc with bp = 800003430, payload size = 418
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001970,index = 11
+enter place with bp = 800001970, asize = 418
+csize = 418
+enter delete_list with bp = 800001970
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 800001970, payload size = 418
+----------------------
+enter free with ptr = 800000cf8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000cf8
+800000cf8 + 18 = 800000d10
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000cf8
+800000d10,208
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001da0,index = 12
+enter place with bp = 800001da0, asize = 418
+csize = 830
+enter delete_list with bp = 800001da0
+leave get_index with asize = 830, index = 12
+800000030,800000030,8000054f0
+enter add_list with bp = 8000021b8
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800001da0, payload size = 418
+----------------------
+enter free with ptr = 800000ce0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000ce0
+800000ce0 + 18 = 800000cf8
+prev_alloc = 1, next_alloc = 0, size = 18
+at case 2
+enter delete_list with bp = 800000cf8
+leave get_index with asize = 18, index = 5
+800000014,800000014,8000008b8
+enter update_next
+enter add_list with bp = 800000ce0
+leave get_index with asize = 30, index = 6
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+leave coalesce with bp = 800000ce0
+800000d10,208
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000008b8,index = 5
+enter place with bp = 8000008b8, asize = 18
+csize = 18
+enter delete_list with bp = 8000008b8
+leave get_index with asize = 18, index = 5
+800000014,800000014,800003008
+enter update_next
+leave place
+leave malloc with bp = 8000008b8, payload size = 18
+----------------------
+enter free with ptr = 800001d88
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001d88
+800001d88 + 18 = 800001da0
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001d88
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001d88
+800001da0,418
+leave free
+----------
+enter free with ptr = 800002bf0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800002bf0
+800002bf0 + 418 = 800003008
+prev_alloc = 1, next_alloc = 0, size = 418
+at case 2
+enter delete_list with bp = 800003008
+leave get_index with asize = 10, index = 5
+800000014,800001d88,800001740
+Nothing Wrong in line 144
+enter update_next
+enter add_list with bp = 800002bf0
+leave get_index with asize = 428, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800002bf0
+800003018,418
+leave free
+----------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800002bf0,index = 11
+enter place with bp = 800002bf0, asize = 208
+csize = 428
+enter delete_list with bp = 800002bf0
+leave get_index with asize = 428, index = 11
+80000002c,80000002c,8000021b8
+enter add_list with bp = 800002df8
+leave get_index with asize = 220, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 800002bf0, payload size = 208
+----------------------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000021b8,index = 11
+enter place with bp = 8000021b8, asize = 418
+csize = 418
+enter delete_list with bp = 8000021b8
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800000000
+enter update_next
+leave place
+leave malloc with bp = 8000021b8, payload size = 418
+----------------------
+enter free with ptr = 800000048
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000048
+800000048 + 208 = 800000250
+prev_alloc = 1, next_alloc = 1, size = 208
+enter update_next
+enter add_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000048
+800000250,18
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 8000054f0,index = 12
+enter place with bp = 8000054f0, asize = 418
+csize = b58
+enter delete_list with bp = 8000054f0
+leave get_index with asize = b58, index = 12
+800000030,800000030,800000000
+enter add_list with bp = 800005908
+leave get_index with asize = 740, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 117
+Nothing Wrong in line 118
+Nothing Wrong in line 119
+leave add_list
+enter update_next
+leave place
+leave malloc with bp = 8000054f0, payload size = 418
+----------------------
+enter free with ptr = 800000268
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000268
+800000268 + 418 = 800000680
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 800000268
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000268
+800000680,208
+leave free
+----------
+enter malloc with size = 410
+enter find_fit with asize = 418
+leave get_index with asize = 418, index = 11
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000268,index = 11
+enter place with bp = 800000268, asize = 418
+csize = 418
+enter delete_list with bp = 800000268
+leave get_index with asize = 418, index = 11
+80000002c,80000002c,800005908
+enter update_next
+leave place
+leave malloc with bp = 800000268, payload size = 418
+----------------------
+enter malloc with size = 200
+enter find_fit with asize = 208
+leave get_index with asize = 208, index = 10
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800000048,index = 10
+enter place with bp = 800000048, asize = 208
+csize = 208
+enter delete_list with bp = 800000048
+leave get_index with asize = 208, index = 10
+800000028,800000028,800002df8
+enter update_next
+leave place
+leave malloc with bp = 800000048, payload size = 208
+----------------------
+enter free with ptr = 8000008a0
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000008a0
+8000008a0 + 18 = 8000008b8
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 8000008a0
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 8000008a0
+8000008b8,18
+leave free
+----------
+enter free with ptr = 800004698
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800004698
+800004698 + 210 = 8000048a8
+prev_alloc = 1, next_alloc = 1, size = 210
+enter update_next
+enter add_list with bp = 800004698
+leave get_index with asize = 210, index = 10
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800004698
+8000048a8,418
+leave free
+----------
+enter free with ptr = 800000888
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800000888
+800000888 + 18 = 8000008a0
+prev_alloc = 1, next_alloc = 0, size = 18
+at case 2
+enter delete_list with bp = 8000008a0
+leave get_index with asize = 18, index = 5
+800000014,800000014,800001d88
+enter update_next
+enter add_list with bp = 800000888
+leave get_index with asize = 30, index = 6
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800000888
+8000008b8,18
+leave free
+----------
+enter free with ptr = 800001958
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 800001958
+800001958 + 18 = 800001970
+prev_alloc = 1, next_alloc = 1, size = 18
+enter update_next
+enter add_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 800001958
+800001970,418
+leave free
+----------
+enter free with ptr = 8000050d8
+Nothing Wrong in line 373
+Nothing Wrong in line 374
+enter coalesce with bp = 8000050d8
+8000050d8 + 418 = 8000054f0
+prev_alloc = 1, next_alloc = 1, size = 418
+enter update_next
+enter add_list with bp = 8000050d8
+leave get_index with asize = 418, index = 11
+Nothing Wrong in line 115
+Nothing Wrong in line 116
+Nothing Wrong in line 122
+Nothing Wrong in line 123
+Nothing Wrong in line 124
+Nothing Wrong in line 125
+Nothing Wrong in line 126
+leave add_list
+leave coalesce with bp = 8000050d8
+8000054f0,418
+leave free
+----------
+enter malloc with size = 10
+enter find_fit with asize = 18
+leave get_index with asize = 18, index = 5
+Not Wrong at line 257
+Not Wrong at line 259
+leave find_fit with bp = 800001958,index = 5
+enter place with bp = 800001958, asize = 18
+csize = 18
+enter delete_list with bp = 800001958
+leave get_index with asize = 18, index = 5
+800000014,800000014,800001d88
+enter update_next
+leave place
+leave malloc with bp = 800001958, payload size = 18
+----------------------
+
+
+correctness check finished, by running tracefile "traces/nlydf.rep".
+ => correct.
+
+Perf index = 0 (util) & 0 (thru) = 0/100
